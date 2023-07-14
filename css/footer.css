@@ -57,6 +57,7 @@
     right: 15px;
     width: 100px;
     border-radius: 100px;
+    z-index: 4;
     border: 10px solid transparent;
 }
 

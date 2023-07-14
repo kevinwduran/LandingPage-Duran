@@ -15,8 +15,8 @@
 /* produtos */
 @import './home/persianas.css';
 
+/* contato */
 @import './home/formulario.css';
-@import './home/contato.css';
-
+@import './home/acionamentos.css';
 /* footer */
 @import 'footer.css'

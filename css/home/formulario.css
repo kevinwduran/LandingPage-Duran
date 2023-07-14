@@ -1,5 +1,6 @@
 .contato-bg{
     background-color: var(--cor-p4);
+    position: relative;
     padding: 60px;
 }
 
@@ -8,6 +9,14 @@
     justify-content: start;
 }
 
+.contato-form > img{
+    display: grid;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    justify-self:center;
+    align-self: center;
+}
 .form{
     background-color: var(--cor-0);
     width: 600px;
@@ -17,6 +26,7 @@
     box-sizing: border-box;
     padding: 32px 60px;
     gap: 20px;
+    z-index: 2;
 }
 .form label{
     color: var(--cor-5);
