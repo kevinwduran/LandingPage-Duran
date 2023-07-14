@@ -1,0 +1,55 @@
+.produtos h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 64px;
+}
+
+.produtos h2::after, .produtos h2::before{
+    content: "";
+    width: 220px;
+    height: 5px;
+    display: inline-block;
+    background: var(--cor-3);
+}
+
+.produtos ul{
+    max-width: 1065px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+}
+
+.produtos li{
+    padding: 16px;
+    display: grid;
+    justify-items: center;
+}
+
+.produtos img{
+    margin: 0 auto;
+}
+
+.produtos h3{
+    padding: 16px 0px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.produtos h3::before{
+    content: "";
+    width: 12px;
+    height: 10px;
+    background-color: var(--cor-p1);
+    transition: .3s;
+}
+
+.produtos a:hover h3::before{
+    width: 20px;   
+}

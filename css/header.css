@@ -1,0 +1,75 @@
+.header-bg{
+    background: var(--cor-0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+.header{
+    background: var(--cor-0);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: fixed;
+    max-width: 1200px;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.header-menu{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-menu ul li{
+    display: block;
+    position: relative;
+}
+
+.header-menu a{
+    color: var(--cor-p5);
+    display: block;
+    padding: 10px 10px 5px 10px;
+    text-align: center;
+}
+
+.menu-itens{
+    border-bottom: 4px solid transparent;
+}
+.menu-itens:hover{
+    border-bottom: 4px solid var(--cor-p1);
+}
+
+.itens-header{
+    background: var(--cor-0);
+    position: absolute;
+    z-index: 5;
+    display: none;
+}
+
+.itens-header li{
+    display: block;
+}
+
+.header-menu .botao{
+    padding: 15px 30px;
+    color: var(--cor-1); 
+}
+
+.itens-header a:hover{
+    background-color: var(--cor-3);
+}
+
+.header-menu li:hover .itens-header{
+    display: block;
+}

@@ -1,0 +1,22 @@
+@import 'global.css';
+@import './utilidades/tipografia.css';
+@import './utilidades/cores.css';
+@import './utilidades/componentes.css';
+
+/* header */
+@import 'header.css';
+
+/* introdução */
+@import './home/introducao.css';
+
+/* produtos */
+@import './home/produtos.css';
+
+/* produtos */
+@import './home/persianas.css';
+
+@import './home/formulario.css';
+@import './home/contato.css';
+
+/* footer */
+@import 'footer.css'

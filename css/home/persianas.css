@@ -1,0 +1,40 @@
+.persianas-bg-out{
+    margin-top: 80px;
+    background-color: var(--cor-p3);
+}
+.persianas-bg-in:nth-child(odd){
+    background-image: linear-gradient(to left, var(--cor-p3) 20%, var(--cor-0) 0%);
+}
+
+.persianas-home h2{
+    padding-top: 40px;
+}
+
+.desc{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.persianas-itens{
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    gap: 20px;
+}
+
+.persianas-imagem{
+    display: grid;
+    grid-area: 1/2;
+    align-self: center;
+}
+
+.persianas-conteudo{
+    display: grid;
+    gap: 20px;
+    place-items: start;
+}
+
+
