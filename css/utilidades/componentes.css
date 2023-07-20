@@ -19,6 +19,7 @@
     max-width: max-content;/* ele terá sempre o tamanho máximo ele mesmo, quando o grid tenta esticá-lo não será possível */
     border: none;
     cursor: pointer;
+    letter-spacing: 1px;
 }
 
 .botao:hover{

@@ -4,7 +4,7 @@
 
 .footer{
     display: grid;
-    grid-template-columns: 3fr 5fr 4fr;
+    grid-template-columns: 3fr 5fr;
     gap: 40px;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -48,7 +48,6 @@
 
 .footer-copy{
     grid-column: 1/-1;
-    margin-top: 40px;
 }
 
 .whats{

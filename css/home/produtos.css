@@ -16,20 +16,20 @@
 }
 
 .produtos ul{
-    max-width: 1065px;
+    max-width: 1300px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    place-items: center;
-}
-
-.produtos li{
-    padding: 16px;
-    display: grid;
-    justify-items: center;
+    /* flex-wrap: wrap; */
+    align-items: end;
+    grid-template-columns: repeat(auto-fit, 220px);
+    grid-auto-rows: 300px;
+    justify-content: center;
+    grid-auto-flow: row dense;
+    gap: 24px;
 }
 
 .produtos img{
+    width: 80%;
     margin: 0 auto;
 }
 

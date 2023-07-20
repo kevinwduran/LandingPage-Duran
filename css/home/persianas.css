@@ -1,5 +1,4 @@
 .persianas-bg-out{
-    margin-top: 80px;
     background-color: var(--cor-p3);
 }
 .persianas-bg-in:nth-child(odd){
@@ -29,8 +28,17 @@
     display: grid;
     grid-area: 1/2;
     align-self: center;
+    max-width: 225px; /* Define o tamanho máximo que o elemento pai pode ter */
+    max-height: 225px; /* Define o tamanho máximo que a altura do elemento pai pode ter (opcional) */
+    overflow: hidden; /* Garante que o conteúdo que ultrapassar o tamanho do elemento pai será oculto */
+    border-radius: 10px;
 }
-
+.persianas-imagem img{
+    width: 100%; /* A imagem ocupará toda a largura do elemento pai */
+    height: 100%; /* A imagem ocupará toda a altura do elemento pai */
+    object-fit: cover; /* Redimensiona a imagem para que ela cubra completamente o contêiner */
+    object-position: center; /* Define a posição da imagem no contêiner (centro, neste caso) */
+}
 .persianas-conteudo{
     display: grid;
     gap: 20px;

@@ -73,3 +73,94 @@
 .header-menu li:hover .itens-header{
     display: block;
 }
+
+nav .menu-icon{
+    width: 36px;
+    cursor: pointer;
+    display: none;
+}
+nav .close-icon{
+    width: 36px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 1200px){
+    .header{
+        box-sizing: border-box;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 940px){
+    .header-bg{
+        background-color: red;
+    }
+    .header{
+        
+        width: 100vw;
+        left: 0;
+        top: 0;
+        transform: translate(0%, 0);
+    }
+    .header-menu a[href='#']{
+        display: none;
+    }
+    .header-menu a{
+        color: var(--cor-1);
+    }
+    .header-menu .botao{
+        margin-top: 20px; 
+    }       
+    .itens-header{
+        background: var(--cor-6);
+        display: block;
+        position: static;
+        border-bottom: 4px solid var(--cor-6);
+    }
+    .itens-header a{
+        border-bottom: 4px solid var(--cor-6);
+    }
+    .itens-header a:hover{
+        background: var(--cor-6);
+        border-bottom: 4px solid var(--cor-p1);
+    }
+    .header-menu{
+        gap: 0px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: var(--cor-6);
+        height: 100vh;
+        width: 300px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        clip-path: circle(0% at 100% 0);
+        transition: .7s;
+    }
+    .header-menu.open{
+        clip-path: circle(141.2% at 100% 0);
+    }
+    nav .menu-icon{
+        display: block;
+    }
+    nav .close-icon{
+        display: block;
+        position: absolute;
+        top: 48px;
+        right: 32px;
+    }
+}
+
+@media (max-width: 600px){
+    .header-menu{
+        gap: 12px;
+    }
+    .header-menu{
+        gap: 12px;
+    }
+    .header-menu a{
+        padding: 8px 12px;
+    }
+}
