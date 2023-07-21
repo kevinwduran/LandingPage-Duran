@@ -29,7 +29,7 @@ const galeriaContainer = document.querySelector('.acionamentos-imgs')
 
 function trocarImagem(event){
     const img = event.currentTarget    
-    const media = matchMedia('(min-width:1000px)').matches // vê se o min-width é menor que 1000px
+    const media = matchMedia('(min-width:100px)').matches //vê se o min-width é menor que 1000px
     if (media){ // se é menor de 1000px fazer, senão não
         galeriaContainer.prepend(img)
     }

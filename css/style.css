@@ -2,21 +2,17 @@
 @import './utilidades/tipografia.css';
 @import './utilidades/cores.css';
 @import './utilidades/componentes.css';
-
 /* header */
 @import 'header.css';
-
 /* introdução */
 @import './home/introducao.css';
-
 /* produtos */
 @import './home/produtos.css';
-
+/* acionamentos */
+@import './home/acionamentos.css';
 /* produtos */
 @import './home/persianas.css';
-
 /* contato */
 @import './home/formulario.css'; 
-@import './home/acionamentos.css';
 /* footer */
 @import 'footer.css'

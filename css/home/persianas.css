@@ -9,16 +9,14 @@
     padding-top: 40px;
 }
 
-.desc{
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 80% 20%;
+.descricao{
+    padding: 40px;
 }
 
 .persianas-itens{
     padding-left: 0;
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 4fr 2fr;
     padding-top: 32px;
     padding-bottom: 32px;
     gap: 20px;
@@ -40,9 +38,35 @@
     object-position: center; /* Define a posição da imagem no contêiner (centro, neste caso) */
 }
 .persianas-conteudo{
+    padding: 0px 40px;
     display: grid;
     gap: 20px;
     place-items: start;
 }
-
+@media (max-width: 1000px){
+    .persianas-bg-in:nth-child(odd){
+        background-image: linear-gradient(to left, var(--cor-p3), var(--cor-0) 0%);
+    }
+    .persianas-itens{
+        grid-template-columns: 3fr 1fr;
+    }
+}
+@media (max-width: 1000px){
+    .persianas-itens{
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    .persianas-imagem{
+        justify-self: center;
+        grid-area: auto;
+        max-width: 100%;
+        padding: 0px 20px;
+    }
+    .persianas-imagem img{
+        max-height: 70%;
+    }
+    .link2, .link{
+        margin: 0 auto;
+    }
+}
 

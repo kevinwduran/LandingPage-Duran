@@ -6,7 +6,7 @@
     display: grid;
     grid-template-columns: 3fr 4fr;
     gap: 40px;
-    padding: 128px 0px;
+    padding: 128px 20px;
 }
 
 .acionamentos-imgs{
@@ -29,7 +29,7 @@
 
 .acionamentos-imgs img:first-child{
     min-width: 100%;
-    height: min(360px, 360px);
+    height: 360px;
     object-fit: cover;
 }
 
@@ -62,6 +62,21 @@
     display: grid;
     gap: 16px;
     margin-bottom: 32px;   
+}
+@media (max-width: 1080px){
+    .acionamentos{
+        padding: 64px 20px;
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 1080px){
+    .acionamentos-imgs img{
+        min-width: 120px;
+        height: auto;
+    }
+    .acionamentos-conteudo .botao{
+        margin: 0 auto;
+    }
 }
 
 

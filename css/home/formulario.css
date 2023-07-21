@@ -23,7 +23,6 @@
     border-radius: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    box-sizing: border-box;
     padding: 32px 60px;
     gap: 20px;
     z-index: 2;
@@ -67,4 +66,29 @@
     border-color: var(--cor-p1);
     background: var(--cor-0);
     box-shadow: 0 0 0 2px #33e0ff;
+}
+
+@media (max-width:800px){
+    .contato-form{
+        justify-content: center;
+        padding: 64px;
+    }
+}
+@media (max-width:600px){
+    .contato-bg{
+        background: none;
+        padding: 0px;
+        overflow-x: hidden;
+    }
+    .form{
+        display: block;
+        width: 100vw;
+        padding: 32px;
+    }
+    .form label, .form .botao{
+        margin-top: 16px;
+    }
+    .form .botao{
+        width: 100%;
+    }
 }

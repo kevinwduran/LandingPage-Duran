@@ -64,3 +64,11 @@
     box-shadow: inset 100px 100px #40c351;
     border: 10px solid #40c35186;
 }
+@media (max-width: 500px){
+    .footer{
+        grid-template-columns: 1fr;
+    }
+    .footer-contato{
+        grid-column: 1;
+    }
+}
