@@ -1,83 +1,106 @@
-.acionamentos-bg{
+.acionamentos-bg {
     background-color: var(--cor-1);
 }
 
-.acionamentos{
+.acionamentos {
     display: grid;
     grid-template-columns: 3fr 4fr;
     gap: 40px;
     padding: 128px 20px;
 }
 
-.acionamentos-imgs{
+.acionamentos-imgs {
     display: flex;
-    flex-wrap: wrap;  
-    gap: 20px;  
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.acionamentos-imgs img{
+.acionamentos-imgs img {
     flex: 1;
-    min-width: 200px; 
+    min-width: 200px;
     object-fit: cover;
     border-radius: 10px;
 }
 
-.acionamentos-imgs img:not(:first-child):hover{
+.acionamentos-imgs img:not(:first-child):hover {
     cursor: pointer;
     outline: 2px solid var(--cor-p1);
 }
 
-.acionamentos-imgs img:first-child{
+.acionamentos-imgs img:first-child {
     min-width: 100%;
     height: 360px;
     object-fit: cover;
 }
 
-.acionamentos-conteudo{
+.acionamentos-conteudo {
     display: grid;
     place-content: start;
 }
 
-.acionamentos-conteudo h2{
+.acionamentos-conteudo h2 {
     margin-bottom: 24px;
-    
+
 }
-.acionamentos-conteudo p{
+
+.acionamentos-conteudo p {
     margin-bottom: 32px;
     max-width: 600px;
     margin-left: 24px;
 }
 
-.acionamentos-conteudo li{
+.acionamentos-conteudo li {
     display: flex;
-    max-width: 400px;
+    max-width: 200px;
     justify-content: space-between;
     align-items: center;
     gap: 8px;
     border-bottom: 2px solid var(--cor-4);
 }
 
-.acionamentos-conteudo ul{
+.acionamentos-conteudo ul {
     margin-left: 24px;
     display: grid;
     gap: 16px;
-    margin-bottom: 32px;   
+    margin-bottom: 32px;
 }
-@media (max-width: 1080px){
-    .acionamentos{
+
+.cores-persianas {
+    grid-column: 1/-1;
+}
+
+.ul-cores-img {
+    margin-top: 32px;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ul-cores-img li img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media (max-width: 1080px) {
+    .acionamentos {
         padding: 64px 20px;
         grid-template-columns: 1fr;
     }
-}
-@media (max-width: 1080px){
-    .acionamentos-imgs img{
+
+    .acionamentos-imgs img {
         min-width: 120px;
         height: auto;
     }
-    .acionamentos-conteudo .botao{
+
+    .acionamentos-conteudo .botao {
         margin: 0 auto;
     }
+
+    .ul-cores-img li img {
+        width: 150px;
+        height: 150px;
+    }
 }
-
-
-

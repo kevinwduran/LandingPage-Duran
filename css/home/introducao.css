@@ -100,7 +100,7 @@
 .navegacao-auto{
     position: absolute;
     width: 100%;
-    bottom: 25px;
+    bottom: 28px;
     display: flex;
     justify-content: center;
 } 

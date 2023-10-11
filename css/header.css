@@ -93,11 +93,7 @@ nav .close-icon{
 }
 
 @media (max-width: 940px){
-    .header-bg{
-        background-color: red;
-    }
     .header{
-        
         width: 100vw;
         left: 0;
         top: 0;

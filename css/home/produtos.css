@@ -4,7 +4,7 @@
     margin-top: 120px;
     align-items: center;
     gap: 40px;
-    margin-bottom: 64px;
+    margin-bottom: 32px;
 }
 
 .produtos h2::after, .produtos h2::before{
@@ -29,7 +29,7 @@
 }
 
 .produtos img{
-    width: 80%;
+    height: 80%;
     margin: 0 auto;
 }
 
@@ -55,10 +55,10 @@
 }
 @media (max-width: 500px){
     .produtos ul{
-        grid-template-columns: repeat(auto-fit, 200px);
-        grid-auto-rows: 240px;
+        grid-template-columns: repeat(auto-fit, 200px); /* largura min elemento */
+        grid-auto-rows: 200px; /* altura elemento */
     }
     .produtos img{
-        width: 70%;
+        width: 50%;
     }
 }
