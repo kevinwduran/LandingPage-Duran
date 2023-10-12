@@ -1,7 +1,14 @@
 .contato-bg{
-    background-color: var(--cor-p4);
+    background-image: url('/img/contato/p-ctt.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     position: relative;
     padding: 60px;
+    width: 100%;
+    max-height: 770px; /* Definir a altura máxima */
+    height: 100vh;
+    box-sizing: border-box;
 }
 
 .contato-form{
@@ -68,6 +75,12 @@
     box-shadow: 0 0 0 2px #33e0ff;
 }
 
+@media (min-width:1080px){
+    .contato-bg{
+        height: 1000px;
+    }
+}
+
 @media (max-width:800px){
     .contato-form{
         justify-content: center;
@@ -79,6 +92,10 @@
         background: none;
         padding: 0px;
         overflow-x: hidden;
+        max-height: 600px;
+    }
+    .contato-form{
+        padding: 0px;
     }
     .form{
         display: block;
@@ -90,5 +107,6 @@
     }
     .form .botao{
         width: 100%;
+        font-size: 1.2rem;
     }
 }

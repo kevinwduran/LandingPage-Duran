@@ -46,7 +46,7 @@
 .menu-itens{
     border-bottom: 4px solid transparent;
 }
-.menu-itens:hover{
+.menu-itens.first:hover{
     border-bottom: 4px solid var(--cor-p1);
 }
 

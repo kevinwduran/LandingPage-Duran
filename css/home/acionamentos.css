@@ -19,6 +19,7 @@
     flex: 1;
     min-width: 200px;
     object-fit: cover;
+    height: 200px;
     border-radius: 10px;
 }
 
@@ -40,7 +41,6 @@
 
 .acionamentos-conteudo h2 {
     margin-bottom: 24px;
-
 }
 
 .acionamentos-conteudo p {
@@ -89,18 +89,26 @@
         padding: 64px 20px;
         grid-template-columns: 1fr;
     }
-
     .acionamentos-imgs img {
         min-width: 120px;
-        height: auto;
     }
-
+    .acionamentos-imgs img:first-child {
+        margin-top: 32px;
+    }
     .acionamentos-conteudo .botao {
         margin: 0 auto;
     }
 
     .ul-cores-img li img {
         width: 150px;
+        height: 150px;
+    }
+}
+@media (max-width: 450px){
+    .acionamentos-imgs img:first-child {
+        height: 200px;
+    }
+    .acionamentos-imgs img {
         height: 150px;
     }
 }
