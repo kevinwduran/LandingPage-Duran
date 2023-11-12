@@ -337,20 +337,20 @@
     <section class="contato-bg" aria-label="Formulário">
         <div class="contato-form container">
             <img src="img/contato/p-ctt 1.pn" alt="">
-            <form id="contato" class="form container" action="./">
+            <form id="contato" class="form container" action="./enviar.php" method="post">
                 <img class="col2" src="img/logo.svg" width="180" height="51" alt="Duran Persianas">
                 <h2 class="col2 font-1-xl color-6">Fale Conosco</h2>
                 <div class="col2">
                     <label for="nome">Nome</label>
-                    <input type="text" id="nome" name="nome" placeholder="Seu nome">
+                    <input required type="text" id="nome" name="nome" placeholder="Seu nome">
                 </div>
                 <div class="col2">
                     <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email" placeholder="contato@email.com">
+                    <input required type="email" id="email" name="email" placeholder="contato@email.com">
                 </div>
                 <div class="col2">
                     <label for="msg">Mensagem</label>
-                    <textarea rows="4" id="msg" name="msg" placeholder="O que você precisa?"></textarea>
+                    <textarea required rows="4" id="msg" name="msg" placeholder="O que você precisa?"></textarea>
                 </div>
                 <button class="col2 botao">Enviar mensagem</button>
             </form>
