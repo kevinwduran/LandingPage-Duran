@@ -67,3 +67,19 @@
 .link2:hover{
     color: var(--cor-p1);
 }
+
+/* Animação abrir conteúdo ao clicar em imagem do acionamentos */
+.transicao-esquerda {
+    animation: show .5s forwards;/*forwards: ao fim da animação, ela ficará em seu estado final*/
+}
+
+@keyframes show{
+    from{
+        opacity: 0;
+        transform: translate3d(-20px, 0, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
