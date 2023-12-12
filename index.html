@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Duran Persianas & Cortinas</title>
     <link rel="shortcut icon" href="fav.svg" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="css/style.min.css" as="style">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -20,7 +21,7 @@
     <header class="header-bg">
         <div class="header">
             <a href="./">
-                <img src="img/logo.svg" width="180" height="51" alt="Duran Persianas">
+                <img loading="lazy" data-src="img/logo.svg" width="180" height="51" alt="Duran Persianas">
             </a>
             <nav>
                 <ul class="header-menu font-1-m color-6">
@@ -41,11 +42,11 @@
                     <li><a class="menu-itens" href="#">Tecidos para Toldos</a></li>
                     <li><a class="botao" href="#contato">Contato</a></li>
                     <div class="close-icon" onclick="closeMenu()">
-                        <img src="img/close-icon.svg" alt="">
+                        <img loading="lazy" data-src="img/close-icon.svg" alt="">
                     </div>
                 </ul>
                 <div class="menu-icon" onclick="openMenu()">
-                    <img src="img/icon-hamburguer.svg" alt="">
+                    <img loading="lazy" data-src="img/icon-hamburguer.svg" alt="">
                 </div>
             </nav>
         </div>
@@ -68,16 +69,16 @@
                     <input type="radio" name="radio-btn" id="radio4">
 
                     <div class="slide primeiro-slide">
-                        <img src="img/introducao/image 1.png" alt="Imagem 1">
+                        <img loading="lazy" data-src="img/introducao/image 1.png" alt="Imagem 1">
                     </div>
                     <div class="slide">
-                        <img src="img/introducao/image 2.png" alt="Imagem 2">
+                        <img loading="lazy" data-src="img/introducao/image 2.png" alt="Imagem 2">
                     </div>
                     <div class="slide">
-                        <img src="img/introducao/image 3.png" alt="Imagem 3">
+                        <img loading="lazy" data-src="img/introducao/image 3.png" alt="Imagem 3">
                     </div>
                     <div class="slide">
-                        <img src="img/introducao/image 4.png" alt="Imagem 4">
+                        <img loading="lazy" data-src="img/introducao/image 4.png" alt="Imagem 4">
                     </div>
 
                     <div class="navegacao-auto">
@@ -93,7 +94,7 @@
                     <label for="radio3" class="manual-btn"></label>
                     <label for="radio4" class="manual-btn"></label>
                 </div>
-                <img class="img2" src="img/introducao/dec-intro.svg" alt="">
+                <img loading="lazy" class="img2" data-src="img/introducao/dec-intro.svg" alt="">
             </div>
         </div>
     </main>
@@ -103,61 +104,61 @@
             <ul>
                 <li>
                     <a href="/produtos/persiana-horizontal.html">
-                        <img src="img/produtos/ph1.svg" width="" height="" alt="Horizontal">
+                        <img loading="lazy" data-src="img/produtos/ph1.svg" width="" height="" alt="Horizontal">
                         <h3 class="font-1-l color-5">Horizontal</h3>
                     </a>
                 </li>
                 <li>
                     <a href="./">
-                        <img src="img/produtos/pv1.svg" width="" height="" alt="Vertical">
+                        <img loading="lazy" data-src="img/produtos/pv1.svg" width="" height="" alt="Vertical">
                         <h3 class="font-1-l color-5">Vertical</h3>
                     </a>
                 </li>
                 <li>
                     <a href="./">
-                        <img src="img/produtos/pcb1.svg" width="" height="" alt="Caixa Box">
+                        <img loading="lazy" data-src="img/produtos/pcb1.svg" width="" height="" alt="Caixa Box">
                         <h3 class="font-1-l color-5">Caixa Box</h3>
                     </a>
                 </li>
                 <li>
                     <a href="./">
-                        <img src="img/produtos/dv.svg" width="" height="" alt="Double Vision">
+                        <img loading="lazy" data-src="img/produtos/dv.svg" width="" height="" alt="Double Vision">
                         <h3 class="font-1-l color-5">Double Vision</h3>
                     </a>
                 </li>
                 <li>
                     <a href="./">
-                        <img src="img/produtos/rt.svg" width="" height="" alt="Cortinas">
+                        <img loading="lazy" data-src="img/produtos/rt.svg" width="" height="" alt="Cortinas">
                         <h3 class="font-1-l color-5">Romana de Teto</h3>
                     </a>
                 </li>
                 <li>
                     <a href="./">
-                        <img src="img/produtos/pr1.svg" width="" height="" alt="Romana">
+                        <img loading="lazy" data-src="img/produtos/pr1.svg" width="" height="" alt="Romana">
                         <h3 class="font-1-l color-5">Romana</h3>
                     </a>
                 </li>
                 <li>
                     <a href="./">
-                        <img src="img/produtos/p1.svg" width="" height="" alt="Painel">
+                        <img loading="lazy" data-src="img/produtos/p1.svg" width="" height="" alt="Painel">
                         <h3 class="font-1-l color-5">Painel</h3>
                     </a>
                 </li>
                 <li>
                     <a href="./">
-                        <img src="img/produtos/ps1.svg" width="" height="" alt="Shangri-lá">
+                        <img loading="lazy" data-src="img/produtos/ps1.svg" width="" height="" alt="Shangri-lá">
                         <h3 class="font-1-l color-5">Shangri-lá</h3>
                     </a>
                 </li>
                 <li>
                     <a href="./">
-                        <img src="img/produtos/c1.svg" width="" height="" alt="Cortinas">
+                        <img loading="lazy" data-src="img/produtos/c1.svg" width="" height="" alt="Cortinas">
                         <h3 class="font-1-l color-5">Cortinas</h3>
                     </a>
                 </li>
                 <li>
                     <a href="./">
-                        <img src="img/produtos/t1.svg" width="" height="" alt="Toldos">
+                        <img loading="lazy" data-src="img/produtos/t1.svg" width="" height="" alt="Toldos">
                         <h3 class="font-1-l color-5">Toldos</h3>
                     </a>
                 </li>
@@ -167,9 +168,9 @@
     <section class="acionamentos-bg">
         <div class="acionamentos container">
           <div class="acionamentos-imgs">
-            <img src="img/produtos/dooya15.jpg" alt="" id="img1">
-            <img src="img/produtos/dooya2705.jpg" alt="" id="img2">
-            <img src="img/produtos/dooya15.jpg" alt="" id="img3">
+            <img loading="lazy" data-src="img/produtos/dooya15.jpg" alt="" id="img1">
+            <img loading="lazy" data-src="img/produtos/dooya2705.jpg" alt="" id="img2">
+            <img loading="lazy" data-src="img/produtos/dooya15.jpg" alt="" id="img3">
           </div>
           <div class="acionamentos-conteudo">
             <h2 class="font-1-xxl color-6">Acionamentos</h2>
@@ -202,7 +203,7 @@
             <div class="persianas-bg-in">
                 <div class="persianas-itens container">
                     <div class="persianas-imagem">
-                        <img src="img/persianas-home/ph.jpg" alt="Persiana Horizontal">
+                        <img loading="lazy" data-src="img/persianas-home/ph.jpg" alt="Persiana Horizontal">
                     </div>
                     <div class="persianas-conteudo container">
                         <h3 class="font-1-xl color-5">Persiana Horizontal</h3>
@@ -219,7 +220,7 @@
             <div class="persianas-bg-in">
                 <div class="persianas-itens container">
                     <div class="persianas-imagem">
-                        <img src="img/persianas-home/pv.jpg" alt="Persiana Vertical">
+                        <img loading="lazy" data-src="img/persianas-home/pv.jpg" alt="Persiana Vertical">
                     </div>
                     <div class="persianas-conteudo container">
                         <h3 class="font-1-xl color-0">Persiana Vertical</h2>
@@ -237,7 +238,7 @@
             <div class="persianas-bg-in">
                 <div class="persianas-itens container">
                     <div class="persianas-imagem">
-                        <img src="img/persianas-home/cb.jpg" alt="Persiana Caixa Box">
+                        <img loading="lazy" data-src="img/persianas-home/cb.jpg" alt="Persiana Caixa Box">
                     </div>
                     <div class="persianas-conteudo container">
                         <h3 class="font-1-xl color-5">Persiana Caixa Box</h2>
@@ -254,7 +255,7 @@
             <div class="persianas-bg-in">
                 <div class="persianas-itens container">
                     <div class="persianas-imagem">
-                        <img src="img/persianas-home/pdv.jpg" alt="Persiana Double Vision">
+                        <img loading="lazy" data-src="img/persianas-home/pdv.jpg" alt="Persiana Double Vision">
                     </div>
                     <div class="persianas-conteudo container">
                         <h3 class="font-1-xl color-0">Persiana Double Vision</h2>
@@ -271,7 +272,7 @@
             <div class="persianas-bg-in">
                 <div class="persianas-itens container">
                     <div class="persianas-imagem">
-                        <img src="img/persianas-home/romana_teto.jpg" alt="Persiana Romana de Teto">
+                        <img loading="lazy" data-src="img/persianas-home/romana_teto.jpg" alt="Persiana Romana de Teto">
                     </div>
                     <div class="persianas-conteudo container">
                         <h3 class="font-1-xl color-5">Persiana Romana de Teto</h2>
@@ -287,7 +288,7 @@
             <div class="persianas-bg-in">
                 <div class="persianas-itens container">
                     <div class="persianas-imagem">
-                        <img src="img/persianas-home/p_romana.png" alt="Persiana Romana">
+                        <img loading="lazy" data-src="img/persianas-home/p_romana.png" alt="Persiana Romana">
                     </div>
                     <div class="persianas-conteudo container">
                         <h3 class="font-1-xl color-0">Persiana Romana</h2>
@@ -304,7 +305,7 @@
             <div class="persianas-bg-in">
                 <div class="persianas-itens container">
                     <div class="persianas-imagem">
-                        <img src="img/persianas-home/pp.jpg" alt="Persiana Painel">
+                        <img loading="lazy" data-src="img/persianas-home/pp.jpg" alt="Persiana Painel">
                     </div>
                     <div class="persianas-conteudo container">
                         <h3 class="font-1-xl color-5">Persiana Painel</h2>
@@ -320,7 +321,7 @@
             <div class="persianas-bg-in">
                 <div class="persianas-itens container">
                     <div class="persianas-imagem">
-                        <img src="img/persianas-home/psha.jpg" alt="Persiana Shangri-lá">
+                        <img loading="lazy" data-src="img/persianas-home/psha.jpg" alt="Persiana Shangri-lá">
                     </div>
                     <div class="persianas-conteudo container">
                         <h3 class="font-1-xl color-0">Persiana Shangri-lá</h2>
@@ -340,9 +341,9 @@
     <!-- formulário contato -->
     <section class="contato-bg" aria-label="Formulário">
         <div class="contato-form container">
-            <img src="img/contato/p-ctt 1.png" alt="">
+            <img loading="lazy" data-src="img/contato/p-ctt 1.png" alt="">
             <form id="contato" class="form container" action="./enviar.php" method="post">
-                <img class="col2" src="img/logo.svg" width="180" height="51" alt="Duran Persianas">
+                <img loading="lazy" class="col2" data-src="img/logo.svg" width="180" height="51" alt="Duran Persianas">
                 <h2 class="col2 font-1-xl color-6">Fale Conosco</h2>
                 <div class="col2">
                     <label for="nome">Nome *</label>
@@ -367,13 +368,13 @@
     <footer class="footer-bg">
         <div class="footer container">
             <div class="logo">
-                <img src="img/redes/logo-b.svg" width="180" height="51" alt="Duran Persianas">
+                <img loading="lazy" data-src="img/redes/logo-b.svg" width="180" height="51" alt="Duran Persianas">
                 <div class="footer-redes">
                     <a href="./">
-                        <img src="img/redes/instagram.svg" width="32" height="32" alt="Instagram">
+                        <img loading="lazy" data-src="img/redes/instagram.svg" width="32" height="32" alt="Instagram">
                     </a>
                     <a href="./">
-                        <img src="img/redes/facebook.svg" width="32" height="32" alt="Facebook">
+                        <img loading="lazy" data-src="img/redes/facebook.svg" width="32" height="32" alt="Facebook">
                     </a>
                 </div>
             </div>
@@ -386,8 +387,8 @@
             </div>
             <p class="footer-copy font-2-m color-4">Duran Persianas & Cortinas © Alguns direitos reservados.</p>
         </div>
-        <a target="_blank" class="whats" href="https://api.whatsapp.com/send?phone=5541997723448"><img
-                src="img/whats-icon.svg" alt="Fale conosco no WhatsApp"></a>
+        <a target="_blank" class="whats" href="https://api.whatsapp.com/send?phone=5541997723448"><img loading="lazy"
+                data-src="img/whats-icon.svg" alt="Fale conosco no WhatsApp"></a>
     </footer>
 
 <script src="js/clickMenuHamb.js"></script>

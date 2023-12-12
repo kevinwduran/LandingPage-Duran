@@ -9,6 +9,25 @@ photoGalleryClick();
 changeContentControls();
 form();
 
+document.addEventListener("DOMContentLoaded", function() {
+    var lazyImages = document.querySelectorAll('[data-src]');
+
+    var observer = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+                var lazyImage = entry.target;
+                lazyImage.src = lazyImage.getAttribute('data-src');
+                observer.unobserve(lazyImage);
+            }
+        });
+    });
+
+    lazyImages.forEach(function(lazyImage) {
+        observer.observe(lazyImage);
+    });
+});
+
+
 // No script.js
 document.getElementById('img1').addEventListener('click', () => changeContentControls(1));
 document.getElementById('img2').addEventListener('click', () => changeContentControls(2));
