@@ -1,12 +1,13 @@
 import initSlidesAnimation from './modules/slides.js';
 import photoGalleryClick from './modules/photoGalleryAc.js';
 import changeContentControls from './modules/changeContentControls.js';
+import form from './modules/form.js';
 
 
 initSlidesAnimation();
 photoGalleryClick();
 changeContentControls();
-console.log('Script.js carregado');
+form();
 
 // No script.js
 document.getElementById('img1').addEventListener('click', () => changeContentControls(1));
