@@ -3,12 +3,6 @@ import photoGalleryClick from './modules/photoGalleryAc.js';
 import changeContentControls from './modules/changeContentControls.js';
 import form from './modules/form.js';
 
-
-initSlidesAnimation();
-photoGalleryClick();
-changeContentControls();
-form();
-
 document.addEventListener("DOMContentLoaded", function() {
     var lazyImages = document.querySelectorAll('[data-src]');
 
@@ -26,6 +20,12 @@ document.addEventListener("DOMContentLoaded", function() {
         observer.observe(lazyImage);
     });
 });
+
+
+initSlidesAnimation();
+photoGalleryClick();
+changeContentControls();
+form();
 
 
 // No script.js
