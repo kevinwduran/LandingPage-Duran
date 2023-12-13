@@ -2,8 +2,8 @@
 // changeContentControls.js
 export default function form() {
    const contato = document.getElementById('contato');
-   
-   function handleKeyUp(event){
+   if(contato){
+    function handleKeyUp(event){
     const target = event.target;
 
     if(!target.checkValidity()){
@@ -15,6 +15,8 @@ export default function form() {
     }
    };
    contato.addEventListener('keyup', handleKeyUp);
+   }
+   
 };
 
   
