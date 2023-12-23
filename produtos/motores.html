@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Duran Persianas - Verticais</title>
+    <title>Duran Persianas - Horizontais</title>
     <link rel="shortcut icon" href="fav.svg" type="image/x-icon">
     <link rel="preload" href="/css/style.css" as="style">
     <link rel="stylesheet" href="/css/style.css">
@@ -27,7 +27,7 @@
                     <li>
                         <a class="menu-itens first" href="#">Persianas</a>
                         <ul class="itens-header">
-                            <li><a href="persiana-horizontal.html">Horizontal</a></li>
+                            <li><a href="persiana-vertical.html">Vertical</a></li>
                             <li><a href="#a">Caixa Box</a></li>
                             <li><a href="a#">Double Vision</a></li>
                             <li><a href="#a">Romana de Teto</a></li>
@@ -36,15 +36,14 @@
                             <li><a href="#a">Shangrilá</a></li>
                         </ul>
                     </li>
-                    <li><a class="menu-itens first" href="motores.html">Motorização</a></li>
-                    <li><a class="menu-itens first" href="#">Tecidos para Toldos</a></li>
+                    <li><a class="menu-itens first" href="/cortinas-a.html">Tecidos para Toldos</a></li>
                     <li><a class="botao" href="/index.html#contato">Contato</a></li>
                     <div class="close-icon" onclick="closeMenu()">
-                        <img loading="lazy" data-src="/img/close-icon.svg" alt="">
+                        <img loading="lazy" src="/img/close-icon.svg" alt="">
                     </div>
                 </ul>
                 <div class="menu-icon" onclick="openMenu()">
-                    <img loading="lazy" data-src="/img/icon-hamburguer.svg" alt="">
+                    <img loading="lazy" src="/img/icon-hamburguer.svg" alt="">
                 </div>
             </nav>
         </div>
@@ -56,36 +55,51 @@
 
     <section class="acionamentos-bg">
         <div class="acionamentos container">
-            <div class="acionamentos-imgs">
-                <img loading="lazy" data-src="/img/contato/p-ctt 1.png" alt="">
-                <img loading="lazy" data-src="/img/introducao/image 2.png" alt="">
-                <img loading="lazy" data-src="/img/introducao/image 1.png" alt="">
+          <div class="acionamentos-imgs">
+            <img loading="lazy" data-src="/img/produtos/produto1.jpg" alt="" id="img1">
+            <img loading="lazy" data-src="/img/produtos/emissores.jpg" alt="" id="img2">
+            <img loading="lazy" data-src="/img/produtos/produto2.jpg" alt="" id="img3">
+          </div>
+          <div class="acionamentos-conteudo">
+            <h2 class="font-1-xxl color-6">Acionamentos</h2>
+            <div id="conteudo1">
+              <h3 class="font-1-x color-5">Motor Dooya - <span>DM35F</span> (Cortinas e persianas)</h3>
+              <ul class="acionamento-ul">
+                <li class="font-2-m color-5">Conexão via Wifi</li>
+                <li class="font-2-m color-5">Controle por voz</li>
+                <li class="font-2-m color-5">Integração com Alexa e Google Assistent</li>
+              </ul>
+              <h3 class="font-1-x color-5">Descrição técnica:</h3>
+              <ul>
+                <li class="tecnica font-2-m color-5">Modelo: DM35F/SW-6/33NN</li>
+                <li class="tecnica font-2-m color-5">120V e 230V</li>
+                <li class="tecnica font-2-m color-5">60Hz</li>
+                <li class="tecnica font-2-m color-5">33r/min</li>
+              </ul>
             </div>
-            <div class="acionamentos-conteudo">
-                <h2 class="font-1-xl color-5">Persianas Verticais</h2>
-                <p class="font-2-m color-5">As persianas verticais oferecem controle versátil de luminosidade através do
-                    ajuste das lâminas verticais, disponíveis em materiais como tecido, PVC ou alumínio. Seu design
-                    moderno se adapta facilmente a diversos estilos de decoração, proporcionando uma estética
-                    contemporânea.</p>
-                <h2 class="font-1-xl color-5">Materiais disponíveis:</h2>
-                <ul class="font-2-m color-4">
-                    <li>Tecido</li>
-                    <li>PVC</li>
-                    <li>Alumínio</li>
+            <div id="conteudo2" style="display: none;">
+                <h3 class="font-1-x color-5">Controles Dooya - <span>DD3000H</span> (1 Canal) | <span>DD3001H</span> (5 Canais)</h3>
+                <ul class="acionamento-ul">
+                    <li class="font-2-m color-5">AAA 1.5Vx2</li>
+                    <li class="font-2-m color-5">433.05-434.79MHz</li>
+                  </ul>
+            </div>
+            <div id="conteudo3" style="display: none;">
+                <h3 class="font-1-x color-5">Motor Dooya - <span>DM35RL</span> (Cortinas e persianas)</h3>
+                <ul class="acionamento-ul">
+                  <li class="font-2-m color-5">Conexão via Controle</li>
                 </ul>
+                <h3 class="font-1-x color-5">Descrição técnica:</h3>
+                <ul>
+                  <li class="tecnica font-2-m color-5">Modelo: DM35F/6/33NN</li>
+                  <li class="tecnica font-2-m color-5">120V e 220V</li>
+                  <li class="tecnica font-2-m color-5">60Hz</li>
+                  <li class="tecnica font-2-m color-5">33r/min</li>
+            </div>
                 <a href="#" class="botao">Baixar Catálogo PDF</a>
             </div>
         </div>
-            <div class="cores-persianas container">
-                <h2 class="font-1-xl color-5">Cores disponíveis:</h2>
-                <ul class="ul-cores-img">
-                    <li><img loading="lazy" src="/img/contato/p-ctt 1.png" alt="Cor 1"></li>
-                    <li><img loading="lazy" src="/img/contato/p-ctt 1.png" alt="Cor 2"></li>
-                    <li><img loading="lazy" src="/img/contato/p-ctt 1.png" alt="Cor 3"></li>
-                    <li><img loading="lazy" src="/img/contato/p-ctt 1.png" alt="Cor 4"></li>
-                </ul>
-            </div>
-        </section>
+    </section>
 
     <footer class="footer-bg">
         <div class="footer container">

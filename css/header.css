@@ -112,12 +112,8 @@ nav .close-icon{
         background: var(--cor-6);
         display: block;
         position: static;
-        border-bottom: 4px solid var(--cor-6);
     }
-    .itens-header a{
-        border-bottom: 4px solid var(--cor-6);
-    }
-    .itens-header a:hover{
+    .menu-itens:hover{
         background: var(--cor-6);
         border-bottom: 4px solid var(--cor-p1);
     }

@@ -8,6 +8,8 @@
 }
 
 .botao{
+    box-sizing: border-box;
+    max-height: 54px;
     padding: 16px 32px;
     display: inline-block;
     background: linear-gradient(#3399FF, #0D77E1);
