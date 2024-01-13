@@ -5,6 +5,8 @@
 /* header */
 @import 'header.css';
 /* introdução */
+@import './home/slides.css';
+/* slides */
 @import './home/introducao.css';
 /* produtos */
 @import './home/produtos.css';

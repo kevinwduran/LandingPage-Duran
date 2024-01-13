@@ -1,7 +1,12 @@
-import initSlidesAnimation from './modules/slides.js';
+import SlidesAnimation from './modules/slides.js';
 import photoGalleryClick from './modules/photoGalleryAc.js';
 import changeContentControls from './modules/changeContentControls.js';
 import form from './modules/form.js';
+
+const slidesAnimation = new SlidesAnimation('input[name="radio-btn"]', '.manual-navegacao label');
+slidesAnimation.init();
+photoGalleryClick();
+changeContentControls();
 
 document.addEventListener("DOMContentLoaded", function() {
     const lazyImages = document.querySelectorAll('[data-src], [src^="/img"]');
@@ -30,10 +35,22 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    let header = document.querySelector('.header');
 
+    // Verifica se o elemento .header existe
+    if (header) {
+        let tamanhoElemento = header.offsetHeight;
 
-initSlidesAnimation();
-photoGalleryClick();
-changeContentControls();
+        let header_bg = document.querySelector('.header-bg');
+        if (header_bg) {
+            header_bg.style.height = tamanhoElemento + 'px';
+        }
 
+        let introducao = document.querySelector('.introducao');
+        if (introducao) {
+            introducao.style.marginTop = tamanhoElemento + 'px';
+        }
+    }
+});
 
