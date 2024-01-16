@@ -1,0 +1,87 @@
+
+.slide-wrapper{
+  overflow: hidden; /* tira a visibilidade das barras horizontais e verticais */
+  margin-bottom: 40px;
+}
+
+/* slide */
+.slide {
+  display: flex;
+}
+
+.slide:hover {
+  will-change: transform; /* performance */
+}
+
+.slide li{
+  flex-shrink: 0; /* imagens não se encolhem para caber na tela */
+  width: 80vw;
+  max-width: 400px;
+  margin: 0 20px;
+  overflow: hidden;
+  opacity: 0.7;
+  transform: scale(0.8);
+  transition: .3s;
+  cursor: pointer;
+}
+
+.slide li img{
+  border-radius: 5px;
+
+}
+
+.slide li.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Navegação */
+
+[data-control="slide"] {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+[data-control="slide"] li a{
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: #fb5;
+  border-radius: 50%;
+  overflow: hidden;
+  text-indent: -999px;
+  margin: 5px;
+}
+
+[data-control="slide"] li.active a,
+[data-control="slide"] li a:hover{
+  background-color: #e54;
+}
+
+/* Custom Control */
+.custom-control {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.custom-control li{
+  opacity: 0.8;
+  transform: scale(0.8);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 2px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+  transition: .3s;
+}
+
+.custom-control li.active{
+  opacity: 1;
+  transform: scale(1);
+}

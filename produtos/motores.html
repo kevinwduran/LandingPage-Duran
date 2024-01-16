@@ -27,8 +27,9 @@
                     <li>
                         <a class="menu-itens first" href="#">Persianas</a>
                         <ul class="itens-header">
+                            <li><a href="persiana-horizontal.html">Horizontal</a></li>
                             <li><a href="persiana-vertical.html">Vertical</a></li>
-                            <li><a href="#a">Caixa Box</a></li>
+                            <li><a href="persiana-caixa-box.html">Caixa Box</a></li>
                             <li><a href="a#">Double Vision</a></li>
                             <li><a href="#a">Romana de Teto</a></li>
                             <li><a href="#a">Romana</a></li>
@@ -38,12 +39,12 @@
                     </li>
                     <li><a class="menu-itens first" href="/cortinas-a.html">Tecidos para Toldos</a></li>
                     <li><a class="botao" href="/index.html#contato">Contato</a></li>
-                    <div class="close-icon" onclick="closeMenu()">
-                        <img loading="lazy" src="/img/close-icon.svg" alt="">
+                    <div class="close-icon">
+                        <img loading="lazy" data-src="/img/icons/close-icon.svg" alt="">
                     </div>
                 </ul>
-                <div class="menu-icon" onclick="openMenu()">
-                    <img loading="lazy" src="/img/icon-hamburguer.svg" alt="">
+                <div class="menu-icon">
+                    <img loading="lazy" data-src="/img/icons/icon-hamburguer.svg" alt="">
                 </div>
             </nav>
         </div>
@@ -56,9 +57,9 @@
     <section class="acionamentos-bg">
         <div class="acionamentos container">
           <div class="acionamentos-imgs">
-            <img loading="lazy" data-src="/img/produtos/produto1.jpg" alt="" id="img1">
+            <img loading="lazy" data-src="/img/produtos/ac-wifi-mult.jpg" alt="" id="img1">
             <img loading="lazy" data-src="/img/produtos/emissores.jpg" alt="" id="img2">
-            <img loading="lazy" data-src="/img/produtos/produto2.jpg" alt="" id="img3">
+            <img loading="lazy" data-src="/img/produtos/ac-padr.jpg" alt="" id="img3">
           </div>
           <div class="acionamentos-conteudo">
             <h2 class="font-1-xxl color-6">Acionamentos</h2>
@@ -104,12 +105,12 @@
     <footer class="footer-bg">
         <div class="footer container">
             <div class="logo">
-                <img loading="lazy" data-src="/img/redes/logo-b.svg" width="180" height="51" alt="Duran Persianas">
+                <img loading="lazy" data-src="/img/logo-b.svg" width="180" height="51" alt="Duran Persianas">
                 <div class="footer-redes">
-                    <a href="./">
+                    <a target="_blank" href="https://www.instagram.com/duranpersianas/">
                         <img loading="lazy" data-src="/img/redes/instagram.svg" width="32" height="32" alt="Instagram">
                     </a>
-                    <a href="./">
+                    <a target="_blank" href="https://www.facebook.com/www.duranpersianas.com.br/">
                         <img loading="lazy" data-src="/img/redes/facebook.svg" width="32" height="32" alt="Facebook">
                     </a>
                 </div>
@@ -124,10 +125,9 @@
             <p class="footer-copy font-2-m color-4">Duran Persianas & Cortinas © Alguns direitos reservados.</p>
         </div>
         <a target="_blank" class="whats" href="https://api.whatsapp.com/send?phone=5541997723448"><img loading="lazy"
-            data-src="/img/whats-icon.svg" alt="Fale conosco no WhatsApp"></a>
+            data-src="/img/redes/whats-icon.svg" alt="Fale conosco no WhatsApp"></a>
     </footer>
-    <script src="/js/clickMenuHamb.js"></script>
-    <script type="module" src="/js/script.js"></script>
+    <script src="/main.js"></script>
 </body>
 
 </html>

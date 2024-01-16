@@ -2,6 +2,7 @@
 @import './utilidades/tipografia.css';
 @import './utilidades/cores.css';
 @import './utilidades/componentes.css';
+@import './utilidades/slide.css';
 /* header */
 @import 'header.css';
 /* introdução */

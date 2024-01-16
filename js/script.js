@@ -2,11 +2,14 @@ import SlidesAnimation from './modules/slides.js';
 import photoGalleryClick from './modules/photoGalleryAc.js';
 import changeContentControls from './modules/changeContentControls.js';
 import form from './modules/form.js';
+import menuHamb from './modules/clickMenuHamb.js';
 
 const slidesAnimation = new SlidesAnimation('input[name="radio-btn"]', '.manual-navegacao label');
 slidesAnimation.init();
+
 photoGalleryClick();
 changeContentControls();
+menuHamb();
 
 document.addEventListener("DOMContentLoaded", function() {
     const lazyImages = document.querySelectorAll('[data-src], [src^="/img"]');
@@ -54,3 +57,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+import SlideNav from './modules/slide.js';
+
+const slide = new SlideNav('.slide-wrapper', '.slide');
+slide.init();
+
+slide.addControl('.custom-control');

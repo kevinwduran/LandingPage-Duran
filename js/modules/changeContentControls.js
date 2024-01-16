@@ -23,6 +23,6 @@ export default function changeContentControls(numero) {
       document.getElementById('img3').addEventListener('click', () => changeContentControls(3));
     }
 }
-  changeContentControls();  
+changeContentControls();  
 
   
