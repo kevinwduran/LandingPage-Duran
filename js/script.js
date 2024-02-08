@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 import SlideNav from './modules/slide.js';
 
-const slide = new SlideNav('.slide-wrapper', '.slide');
+const slide = new SlideNav('.slide-wrapper', '.slide-big');
 slide.init();
 
 slide.addControl('.custom-control');

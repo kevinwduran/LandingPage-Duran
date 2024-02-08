@@ -192,7 +192,7 @@ export default class SlideNav extends Slide {
 
     criarControle() {
         const control = document.createElement('ul');
-        control.dataset.control = 'slide';
+        control.dataset.control = 'slideControl';
 
         this.slideArray.forEach((item, index) => {
             control.innerHTML += `<li><a href="#slide${index + 1}">${index + 1}</a></li>`;

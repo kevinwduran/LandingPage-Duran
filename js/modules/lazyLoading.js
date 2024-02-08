@@ -16,7 +16,6 @@ export default function lazyLoading() {
                 if (dataSrc) {
                     lazyImage.src = dataSrc;
                     observer.unobserve(lazyImage);
-                    /*console.log(`Imagem carregada: ${dataSrc}`);*/
                 }
             }
         });
