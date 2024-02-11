@@ -19,3 +19,11 @@
 @import './home/formulario.css'; 
 /* footer */
 @import 'footer.css';
+
+#mensagem {
+    display: grid;
+    grid-column: 1 / -1;
+    color: #389f18;
+    text-align: center;
+    font-size: 0.5rem;
+}
