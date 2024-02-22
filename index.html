@@ -14,7 +14,7 @@
         href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap"
         rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -31,7 +31,7 @@
                             <li><a href="/produtos/persiana-horizontal.html">Horizontal</a></li>
                             <li><a href="/produtos/persiana-vertical.html">Vertical</a></li>
                             <li><a href="/produtos/persiana-caixa-box.html">Caixa Box</a></li>
-                            <li><a href="a#">Double Vision</a></li>
+                            <li><a href="/produtos/persiana-double-vision.html">Double Vision</a></li>
                             <li><a href="#a">Romana de Teto</a></li>
                             <li><a href="#a">Romana</a></li>
                             <li><a href="/produtos/persiana-painel.html">Painel</a></li>
@@ -371,25 +371,25 @@
     <!-- formulário contato -->
     <section class="contato-bg" aria-label="Formulário">
         <div class="contato-form container">
-            <form id="contato" class="form container" action="./enviar.php" method="post">
+            <form id="contato" class="form container" method="post">
                 <img loading="lazy" class="col2" data-src="img/logo.svg" width="180" height="51" alt="Duran Persianas">
                 <h2 class="col2 font-1-xl color-6">Fale Conosco</h2>
                 <div class="col2">
                     <label for="nome">Nome *</label>
                     <input required type="text" id="nome" name="nome" placeholder="Seu nome">
-                    <span class="erroForm"></span>
+                    <span class="erroForm" id="nome-erro"></span>
                 </div>
                 <div class="col2">
                     <label for="email">E-mail *</label>
                     <input required type="email" id="email" name="email" placeholder="contato@email.com">
-                    <span class="erroForm"></span>
+                    <span class="erroForm" id="email-erro"></span>
                 </div>
                 <div class="col2">
                     <label for="msg">Mensagem *</label>
                     <textarea required rows="4" id="msg" name="msg" placeholder="O que você precisa?"></textarea>
-                    <span class="erroForm"></span>
+                    <span class="erroForm" id="msg-erro"></span>
                 </div>
-                <button class="col2 botao">Enviar mensagem</button>
+                <button type="submit" class="col2 botao">Enviar mensagem</button>
             </form>
         </div>
     </section>
@@ -419,7 +419,35 @@
         <a target="_blank" class="whats" href="https://api.whatsapp.com/send?phone=5541997723448"><img loading="lazy"
                 data-src="img/redes/whats-icon.svg" alt="Fale conosco no WhatsApp"></a>
     </footer>
-
+    <script>
+        $(document).ready(function(){
+            $('#contato').submit(function(e){
+                e.preventDefault();
+                $.ajax({
+                    type: 'post',
+                    url: './enviar.php',
+                    data: $('#contato').serialize(),
+                    success: function(response){
+                        showNotification(response);
+                    }
+                });
+            });
+        
+            function showNotification(message) {
+                var notification = $('<div class="notification hide"></div>').text(message);
+                $('body').append(notification);
+                notification.addClass('show');
+        
+                setTimeout(function(){
+                    notification.removeClass('show');
+                    notification.addClass('hide');
+                    setTimeout(function(){
+                        notification.remove();
+                    }, 300); // Tempo de transição CSS
+                }, 3000); // 3 segundos
+            }
+        });
+    </script>
     <script src="main.js"></script>
     
 </body>
