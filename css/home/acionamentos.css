@@ -91,6 +91,16 @@
     border-radius: 10px;
     height: 220px;
     object-fit: cover;
+    margin-bottom: 10px;
+    transition: .3s;
+}
+
+.ul-cores-img img:hover{
+    scale: 1.1;
+}
+
+.ul-cores-img li{
+    text-align: center;
 }
 
 @media (max-width: 1080px) {
