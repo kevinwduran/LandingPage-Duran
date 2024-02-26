@@ -20,24 +20,13 @@
 /* footer */
 @import 'footer.css';
 
-.notification {
-  position: fixed;
-  top: 400px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #333;
-  color: #fff;
-  padding: 15px 20px;
-  border-radius: 5px;
-  z-index: 9999;
+#mensagem {
+  color: #079107;
+  font-size: 0.8rem;
+  z-index: 999;
 }
 
-.show {
-  opacity: 1;
-  transition: opacity 0.3s ease;
+.midMessageForm{
+  text-align: center;
 }
 
-.hide {
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}

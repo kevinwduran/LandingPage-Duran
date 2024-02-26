@@ -390,12 +390,10 @@
                     <span class="erroForm" id="msg-erro"></span>
                 </div>
                 <button type="submit" class="col2 botao">Enviar mensagem</button>
-<<<<<<< HEAD
-            </form>
-=======
-                <div class="font-1-xl" id="mensagem"></div>
-            </form>          
->>>>>>> 9df6097a888a2cb040086eeb5af57bf66f90f73e
+                <div class="col2 midMessageForm">
+                    <div class="font-1-xl" id="mensagem"></div>
+                </div>
+            </form>   
         </div>
     </section>
 
@@ -433,26 +431,15 @@
                     url: './enviar.php',
                     data: $('#contato').serialize(),
                     success: function(response){
-                        showNotification(response);
+                        $('#mensagem').html(response);
+                        setTimeout(function(){
+                            $('#mensagem').fadeOut('slow');
+                        }, 3000); // 3000 milissegundos = 3 segundos
                     }
                 });
             });
-        
-            function showNotification(message) {
-                var notification = $('<div class="notification hide"></div>').text(message);
-                $('body').append(notification);
-                notification.addClass('show');
-        
-                setTimeout(function(){
-                    notification.removeClass('show');
-                    notification.addClass('hide');
-                    setTimeout(function(){
-                        notification.remove();
-                    }, 300); // Tempo de transição CSS
-                }, 3000); // 3 segundos
-            }
         });
-    </script>
+        </script>
     <script src="main.js"></script>
     
 </body>
