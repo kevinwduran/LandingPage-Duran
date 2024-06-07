@@ -15,6 +15,7 @@
         rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 
 <body>
@@ -31,15 +32,15 @@
                             <li><a href="/produtos/persiana-horizontal.html">Horizontal</a></li>
                             <li><a href="/produtos/persiana-vertical.html">Vertical</a></li>
                             <li><a href="/produtos/persiana-caixa-box.html">Caixa Box</a></li>
-                            <li><a href="/produtos/persiana-double-vision.html">Double Vision</a></li>
-                            <li><a href="#a">Romana de Teto</a></li>
+                            <li><a href="a#">Double Vision</a></li>
+                            <li><a href="/produtos/persiana-romana-teto.html">Romana de Teto</a></li>
                             <li><a href="#a">Romana</a></li>
                             <li><a href="/produtos/persiana-painel.html">Painel</a></li>
-                            <li><a href="#a">Shangrilá</a></li>
+                            <li><a href="persiana-shangrila.html">Shangrilá</a></li>
                         </ul>
                     </li>
                     <li><a class="menu-itens first" href="/produtos/motores.html">Motorização</a></li>
-                    <!-- <li><a class="menu-itens first disabled" href="#a">Tecidos para Toldos</a></li> -->
+                    <li><a class="menu-itens first" href="#">Tecidos para Toldos</a></li>
                     <li><a class="botao" href="#contato">Contato</a></li>
                     <div class="close-icon">
                         <img loading="lazy" data-src="img/icons/close-icon.svg" alt="">
@@ -117,19 +118,19 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/produtos/persiana-vertical.html">
+                    <a href="./">
                         <img loading="lazy" data-src="img/introducao/pv1.svg" width="" height="" alt="Vertical">
                         <h3 class="font-1-l color-5">Vertical</h3>
                     </a>
                 </li>
                 <li>
-                    <a href="/produtos/persiana-caixa-box.html">
+                    <a href="./">
                         <img loading="lazy" data-src="img/introducao/pcb1.svg" width="" height="" alt="Caixa Box">
                         <h3 class="font-1-l color-5">Caixa Box</h3>
                     </a>
                 </li>
                 <li>
-                    <a href="/produtos/persiana-double-vision.html">
+                    <a href="./">
                         <img loading="lazy" data-src="img/introducao/dv.svg" width="" height="" alt="Double Vision">
                         <h3 class="font-1-l color-5">Double Vision</h3>
                     </a>
@@ -147,7 +148,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/produtos/persiana-painel.html">
+                    <a href="./">
                         <img loading="lazy" data-src="img/introducao/p1.svg" width="" height="" alt="Painel">
                         <h3 class="font-1-l color-5">Painel</h3>
                     </a>
@@ -390,10 +391,8 @@
                     <span class="erroForm" id="msg-erro"></span>
                 </div>
                 <button type="submit" class="col2 botao">Enviar mensagem</button>
-                <div class="col2 midMessageForm">
-                    <div class="font-1-xl" id="mensagem"></div>
-                </div>
-            </form>   
+                <div class="font-1-xl" id="mensagem"></div>
+            </form>          
         </div>
     </section>
 
@@ -434,12 +433,12 @@
                         $('#mensagem').html(response);
                         setTimeout(function(){
                             $('#mensagem').fadeOut('slow');
-                        }, 3000); // 3000 milissegundos = 3 segundos
+                        }, 5000); // 5 segundos
                     }
                 });
             });
         });
-        </script>
+    </script>
     <script src="main.js"></script>
     
 </body>
